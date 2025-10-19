@@ -4,45 +4,70 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Семестровая работа</title>
+ <link rel="stylesheet" href="style/styles.css">
  </head>
- <body>
- <div id="header">Хэдер</div>
- <nav class="nav">
- <ul>
- <li><a href="index.html">Главная</a></li>
- <li><a href="pages/news.html">Новости</a></li>
- <li><a href="pages/practices.html">Практики</a></li>
- <li><a href="pages/goods.html">Товары</a></li>
- <li><a href="pages/contacts.html">Контакты</a></li>
- </ul>
- </nav>
- <div id="content">
- <p>Информация об авторе</p>
- <img src="images\прикол.jpg" alt="Фото автора" width="200"
-height="250">
- <p>Шатунова Виктория Константиновна</p>
- <p>ЭФБО-05-24</p>
- <p>Обо мне: Из просмотренных мною сериалов:Менталист, Сверхъестественное, Новичок, Сабрина маленькая ведьма, Волчонок, Обмани меня, Почему женщины убивают, Касл, Эйфория, Как избежать наказание за убийство, Дневники вампира, Первородные, Наследие, Элементарно, Шерлок холмс, 911, Вечность, В поисках Аляски, Извне, Топи, Бестыжие, Отчаяные домохозяйки, Ходячие мертвецы, Однажды в сказке, Джинни и Джорджия, Элита, Бумажный дом, Карамора, Уэйн, Голяк, Монастырь, Начало, Предчувствие, Великая, Очень странные дела, Общество, Кухня, Нюхач, 13 причин почему, Ведьмак, Ненасытная, Пёс, Фишер, Доктор Хаус, Академия амбрелла, Полицейский с рублевки, Стрела, Флеш, Люцифер</p>
- <div>Навык 1</div>
- <div>Навык 2</div>
- <div>Навык 3</div>
- <div>Навык 4</div>
- <div>
- Мой опыт работы:
- <div>
- Опыт 1<br>
- Работала, не покладая рук. Ничего не получила.
- </div>
-  <div>
- Опыт 2<br>
- Спала и видела хорошиие сны. Просыпалась с хорошим настроением.
- </div>
- <div>
- Опыт 3<br>
- Пыталась найти работу. Попала в рабство.
- </div>
- </div>
- </div>
- <div id="footer">Футер</div>
- </body>
+<body>
+        <div class="page-container">
+            <header class="header"> 
+                <h1>Хэдер</h1> 
+            </header>
+
+            <nav class="nav"> 
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/practices.html">Практики</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <main class="content"> 
+                <article class="profile-header"> 
+                    <h1 class="profile-title">Информация об авторе</h1>
+                    <img class="profile-photo" src="images/прикол.jpg" alt="Фото автора">
+                    <h2 class="profile-name">Шатунова Виктория Константиновна</h2>
+                    <p class="profile-group">ЭФБО-05-24</p>
+                </article>
+                
+                <section class="about-me"> 
+                    <h2>Обо мне</h2> 
+                    <p>Обо мне: люблю кошек, тип личности intp</p>
+                </section>
+                
+                <section class="skills-container"> 
+                    <h2>Мои навыки</h2> 
+                    <div class="skills-grid"> 
+                        <div class="skill-tag">Навык 1</div>
+                        <div class="skill-tag">Навык 2</div>
+                        <div class="skill-tag">Навык 3</div>
+                        <div class="skill-tag">Навык 4</div>
+                    </div>
+                </section>
+                
+                <section class="experience-section"> 
+                    <h2 class="section-title">Мой опыт работы</h2>
+                    <div class="experience-grid"> 
+                        <article class="experience-card">
+                            <h3 class="experience-title">Опыт 1</h3>
+                            <p class="experience-desc">Работала 1</p>
+                        </article>
+                        <article class="experience-card">
+                            <h3 class="experience-title">Опыт 2</h3>
+                            <p class="experience-desc">Работала 2</p>
+                        </article>
+                        <article class="experience-card">
+                            <h3 class="experience-title">Опыт 3</h3>
+                            <p class="experience-desc">Работала 3.</p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <p>Футер</p>
+            </footer>    
+        </div>
+    
+</body>
 </html>
